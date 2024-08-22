@@ -38,6 +38,9 @@ let capsEntries = entries.map((entry) => [
 ]);
 sequelize.models = Object.fromEntries(capsEntries);
 
+const { Phone } = sequelize.models;
+
+
 
 module.exports = {
     ...sequelize.models,
