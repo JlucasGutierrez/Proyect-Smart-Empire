@@ -12,13 +12,13 @@ module.exports = (sequelize) => {
             allowNull: true,
             unique: true,
         },
-        brandName: {
-            type: DataTypes.STRING,
-            allowNull: true,
-        },
-        price: {
-            type: DataTypes.FLOAT,
-            allowNull: true,
-        },
+        // brandName: {
+        //     type: DataTypes.STRING,
+        //     allowNull: true,
+        // },
+        // price: {
+        //     type: DataTypes.FLOAT,
+        //     allowNull: true,
+        // },
     })
 }

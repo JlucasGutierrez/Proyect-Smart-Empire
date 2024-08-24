@@ -1,9 +1,9 @@
-const { CreatePhone } = require("../controller/createPhoneController");
+const { createPhone } = require("../controller/createPhoneController");
 
 exports.createPhone = async (req, res) => {
-    const {id,name,brandName,price} = req.body;
+    const { name } = req.body;
     try {
-        const newPhone = await CreatePhone(id,name,brandName,price);
+        const newPhone = await createPhone( name );
         res.status(201).json(newPhone);
     } catch (error) {
         res.status(500).json({ error: error.message })

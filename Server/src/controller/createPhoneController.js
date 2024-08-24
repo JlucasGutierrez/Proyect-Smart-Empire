@@ -1,7 +1,9 @@
-const { Phone } = require("../db") 
+const { Phone, Brand} = require("../db");
 
-exports.CreatePhone = async () => {
-    const response = await Phone.Create({id,name,brandNae,price});
+exports.createPhone = async (name) => {
+    const response = await Phone.create({
+        name
+    });
 
     return response;
-}
+};

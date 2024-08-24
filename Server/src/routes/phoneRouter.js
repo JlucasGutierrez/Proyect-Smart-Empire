@@ -2,8 +2,8 @@ const { Router } = require("express");
 const { createPhone } = require("../handlers/createPhoneHandlre");
 
 
-const PhoneRouter = Router();
+const phoneRouter = Router();
 
-PhoneRouter.post("/", createPhone)
+phoneRouter.post("/", createPhone)
 
-module.exports = PhoneRouter
+module.exports = phoneRouter
